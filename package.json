@@ -1,0 +1,49 @@
+{
+  "name": "generational_indices",
+  "version": "1.0.0",
+  "description": "A simple package which allows the reuse of indices by allocating indices attached with a generation.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Altanis/generational_indices.git"
+  },
+  "keywords": [
+    "generational index",
+    "generational indices",
+    "generational indexes",
+    "allocator",
+    "javascript",
+    "entities",
+    "indices",
+    "generation",
+    "recycle",
+    "idmanagement",
+    "memorymanagement",
+    "entitysystem",
+    "indexallocator",
+    "indexmanager",
+    "idallocator",
+    "idmanager",
+    "indexing",
+    "gensystem",
+    "genindex",
+    "genallocator",
+    "genmanager",
+    "validindex",
+    "entityindex"
+  ],
+  "author": "Altanis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Altanis/generational_indices/issues"
+  },
+  "homepage": "https://github.com/Altanis/generational_indices#readme",
+  "devDependencies": {
+    "@types/node": "^22.0.2",
+    "typescript": "^5.5.4"
+  }
+}

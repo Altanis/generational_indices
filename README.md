@@ -3,7 +3,19 @@ A simple library which provides a generational index allocator.
 
 ## Example Usage
 ```js
+// If you're using TypeScript, you may also import `GenerationalIndex` as a type to describe an index.
+// type GenerationalIndex = { index: number, generation: number }
+const { GenerationalAllocator } = require("generational_indices");
+const allocator = new GenerationalAllocator();
 
+const id = allocator.allocate(); // { index: 0, generation: 0 }
+const id2 = allocator.allocate(); // { index: 1, generation: 0 }
+
+allocator.free(id.index);
+allocator.is_valid(id); // false (it got freed)
+allocator.is_valid(id2); // true (its still active)
+
+const id3 = allocator.allocate(); // { index: 0, generation: 1 }
 ```
 
 ## What are generational indices?
